@@ -2,9 +2,19 @@
 
 **DPF-IDS: A Robust Decentralized Prototype Federated Learning-Based Intrusion Detection with Poisoning Attack Resilience**
 
-DPF-IDS is a decentralized prototype-based federated learning framework for intrusion detection in IoT and edge environments. Instead of exchanging raw data, gradients, or full model weights, collaborators exchange compact prototype vectors extracted from the penultimate hidden layer of local IDS models.
+Nguyen Huu Quyen, Hoang Ngoc Khanh, Nguyen Tran Minh Khoi, Lu Le Huong Giang, Van-Hau Pham
+
+DPF-IDS is a decentralized prototype-federated IDS framework that exchanges compact penultimate-layer prototypes instead of model parameters or gradients, reducing inference exposure while enabling adaptive collaboration and poisoning-resilient aggregation of benign prototypes.
 
 This repository accompanies the research paper and is intended to support research reproducibility.
+
+## Paper Highlights
+
+- DPF-IDS enables inference-resilient decentralized prototype-only federated intrusion detection.
+- Poisoning-resilient aggregation filters malicious collaborators before global prototype aggregation.
+- Dynamic temporary-server selection avoids relying on a fixed central aggregation server.
+- DPF-IDS reduces communication overhead by `334.2x` to `6370.7x` compared with evaluated baselines.
+- DPF-IDS achieves the top Macro-F1-score under PGA and BoTPA poisoning attacks among the evaluated methods.
 
 ## Paper Overview
 
@@ -27,17 +37,6 @@ The evaluated data and attack settings are:
 - Label-flipping data poisoning.
 - PGA-based untargeted model poisoning.
 - BoTPA targeted poisoning.
-
-## Key Features
-
-- Decentralized prototype-based learning for IoT/edge intrusion detection.
-- No exchange of raw data, gradients, or full model parameters.
-- Compact 16-dimensional prototype communication.
-- Adaptive prototype topology optimization.
-- Prototype-only poisoned-collaborator detection.
-- Benign-only aggregation for robust global prototype construction.
-- Support for clean, label-flipping, PGA, and BoTPA experimental settings.
-- Experiment runners for 200-collaborator and 500-collaborator deployments.
 
 ## Repository Structure
 
@@ -297,22 +296,6 @@ To reproduce paper tables and figures:
 3. Aggregate metrics across runs using the same seeds and settings reported in the paper.
 4. Use the aggregated CSV files to regenerate the tables and plots.
 
-If additional plotting or table-generation scripts are added, document the exact command in this section. Until then, the CSV outputs are the canonical reproduction artifacts.
-
-## Expected Outputs
-
-Each experiment may produce:
-
-- Round checkpoints.
-- Per-client prototype detection reports.
-- Cluster-level detection reports.
-- Threshold/lambda diagnostic CSV files.
-- Poisoned-collaborator mapping reports.
-- Evaluation metric CSV files.
-- Optional BoTPA source-to-target attack success rate logs.
-
-These outputs are written under the experiment-specific `checkpoint_dir`.
-
 ## Main Results Summary
 
 The following summary should be interpreted as a high-level guide to the paper results, not as a substitute for the full experimental tables.
@@ -337,12 +320,6 @@ Corresponding author: **Van-Hau Pham**.
 
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for details.
 
-## Contact
-
-For questions about the paper or repository, please contact:
-
-**Nguyen Huu Quyen**  
-Email: [quyennh@uit.edu.vn](mailto:quyennh@uit.edu.vn)
 
 ## Research Reproducibility Notice
 
