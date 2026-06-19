@@ -124,6 +124,12 @@ Exact package versions should be pinned in your own environment file when prepar
 
 DPF-IDS is evaluated on CICIoT2023. The dataset must be obtained according to the dataset provider's terms and conditions. This repository does not redistribute CICIoT2023.
 
+If you need the processed dataset used for these experiments, access it through the following Google Drive folder:
+
+[https://drive.google.com/drive/folders/1NO26qAGugxhaCr-ZZjevqk11QoHNVGg1?usp=drive_link](https://drive.google.com/drive/folders/1NO26qAGugxhaCr-ZZjevqk11QoHNVGg1?usp=drive_link)
+
+Please ensure that any dataset access and use comply with the CICIoT2023 provider's terms and any applicable institutional or project requirements.
+
 Use a local dataset path such as:
 
 ```text
@@ -143,18 +149,18 @@ Expected collaborator layouts:
 
 ```text
 /path/to/processed/CICIoT2023/200c/
-├── client_001.pt
-├── client_002.pt
-├── ...
-└── client_200.pt
+|-- client_001.pt
+|-- client_002.pt
+|-- ...
+`-- client_200.pt
 ```
 
 ```text
 /path/to/processed/CICIoT2023/500c/
-├── client_001.pt
-├── client_002.pt
-├── ...
-└── client_500.pt
+|-- client_001.pt
+|-- client_002.pt
+|-- ...
+`-- client_500.pt
 ```
 
 Shared test file:
@@ -278,10 +284,10 @@ Common output locations include:
 
 ```text
 checkpoints/<experiment_name>/
-├── *_checkpoint_round*.pt
-├── detection_logs/
-├── poison_index_mapping_logs/
-└── eval_logs/
+|-- *_checkpoint_round*.pt
+|-- detection_logs/
+|-- poison_index_mapping_logs/
+`-- eval_logs/
 ```
 
 To reproduce paper tables and figures:
@@ -327,23 +333,6 @@ The following summary should be interpreted as a high-level guide to the paper r
 
 Corresponding author: **Van-Hau Pham**.
 
-## Citation
-
-If you use this repository or the DPF-IDS method in your research, please cite the accompanying paper.
-
-Placeholder BibTeX entry:
-
-```bibtex
-@article{dpfids2026,
-  title   = {DPF-IDS: A Robust Decentralized Prototype Federated Learning-Based Intrusion Detection with Poisoning Attack Resilience},
-  author  = {Nguyen Huu Quyen and Hoang Ngoc Khanh and Nguyen Tran Minh Khoi and Lu Le Huong Giang and Van-Hau Pham},
-  journal = {To appear},
-  year    = {2026}
-}
-```
-
-Update this entry with the final venue, volume, pages, and DOI once available.
-
 ## License
 
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for details.
@@ -352,8 +341,8 @@ This repository is released under the Apache License 2.0. See [LICENSE](LICENSE)
 
 For questions about the paper or repository, please contact:
 
-**Van-Hau Pham**  
-Email: [haupv@uit.edu.vn](mailto:haupv@uit.edu.vn)
+**Nguyen Huu Quyen**  
+Email: [quyennh@uit.edu.vn](mailto:quyennh@uit.edu.vn)
 
 ## Research Reproducibility Notice
 
