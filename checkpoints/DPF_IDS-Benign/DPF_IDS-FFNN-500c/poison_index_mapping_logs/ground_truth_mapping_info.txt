@@ -1,0 +1,8 @@
+poison_index_path: /home/q/Downloads/client_data_poison/200c/poisoned_200c_20p.txt
+raw_count: 0
+mapped_count: 0
+chosen_index_base: client_id
+raw_indices_preview: []
+mapped_client_ids_preview: []
+unmapped_raw_indices: []
+candidate_counts: {'client_id': 0, 'zero_based_client_id': 0, 'filename_number': 0, 'zero_based_filename_number': 0}

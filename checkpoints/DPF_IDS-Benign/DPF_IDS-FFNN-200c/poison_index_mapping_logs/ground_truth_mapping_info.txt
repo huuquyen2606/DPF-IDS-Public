@@ -1,0 +1,6 @@
+data_mode: benign
+poison_index_path: None
+raw_count: 0
+mapped_count: 0
+chosen_index_base: None
+note: Benign mode: no ground-truth poison .txt file is loaded.

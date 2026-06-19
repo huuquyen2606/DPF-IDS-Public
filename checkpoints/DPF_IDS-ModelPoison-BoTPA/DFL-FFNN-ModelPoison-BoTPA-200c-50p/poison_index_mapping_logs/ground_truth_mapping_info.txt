@@ -1,0 +1,8 @@
+poison_index_path: /home/q/Downloads/poison/200c/poisoned_200c_50p.txt
+raw_count: 100
+mapped_count: 100
+chosen_index_base: filename_number
+raw_indices_preview: [7, 9, 10, 11, 13, 16, 19, 22, 23, 24, 25, 28, 30, 33, 39, 41, 46, 48, 52, 55]
+mapped_client_ids_preview: [7, 9, 10, 11, 13, 16, 19, 22, 23, 24, 25, 28, 30, 33, 39, 41, 46, 48, 52, 55]
+unmapped_raw_indices: []
+candidate_counts: {'client_id': 100, 'zero_based_client_id': 100, 'filename_number': 100, 'zero_based_filename_number': 100}

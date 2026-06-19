@@ -1,0 +1,16 @@
+Round: 5
+Detected poison: 37
+True poison: 40
+TP: 36
+FP: 1
+FN: 4
+TN: 159
+Precision: 0.972973
+Recall: 0.900000
+F1: 0.935065
+Accuracy: 0.975000
+False Positive Rate: 0.006250
+
+TP client IDs: [15, 17, 18, 23, 34, 35, 44, 56, 68, 72, 76, 85, 87, 91, 104, 107, 108, 118, 120, 126, 127, 128, 133, 139, 143, 145, 151, 164, 165, 167, 168, 170, 171, 174, 175, 181]
+FP client IDs: [190]
+FN client IDs: [13, 82, 155, 177]
