@@ -319,8 +319,3 @@ Corresponding author: **Van-Hau Pham**.
 ## License
 
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for details.
-
-
-## Research Reproducibility Notice
-
-This repository is provided for research reproducibility. Results may vary with hardware, software versions, random seeds, preprocessing choices, and dataset partitioning. CICIoT2023 must be obtained and used according to the dataset provider's terms.
